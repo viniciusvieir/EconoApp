@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114125D218F4F3BD382CFEAD /* Pods_EconoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140E0A2DCFF32BC255C5BDE1 /* Pods_EconoApp.framework */; };
+		813CE3061ED3FF6400CC0070 /* HTMLReaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813CE3051ED3FF6400CC0070 /* HTMLReaper.swift */; };
 		818C75691ED3FE41006FA2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C75681ED3FE41006FA2E2 /* AppDelegate.swift */; };
 		818C756B1ED3FE41006FA2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C756A1ED3FE41006FA2E2 /* ViewController.swift */; };
 		818C756E1ED3FE41006FA2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818C756C1ED3FE41006FA2E2 /* Main.storyboard */; };
 		818C75701ED3FE41006FA2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818C756F1ED3FE41006FA2E2 /* Assets.xcassets */; };
 		818C75731ED3FE41006FA2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818C75711ED3FE41006FA2E2 /* LaunchScreen.storyboard */; };
+		81BBE2391ED47CB800F6E736 /* SELIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BBE2381ED47CB800F6E736 /* SELIC.swift */; };
+		81BBE23B1ED48FD900F6E736 /* SidraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BBE23A1ED48FD900F6E736 /* SidraAPI.swift */; };
+		81FE5F431ED4A8AA00F29312 /* MinimumWageBrazil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F421ED4A8AA00F29312 /* MinimumWageBrazil.swift */; };
+		81FE5F451ED4ADB800F29312 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F441ED4ADB800F29312 /* String+Extensions.swift */; };
+		81FE5F471ED4B91E00F29312 /* WorldBankAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F461ED4B91E00F29312 /* WorldBankAPI.swift */; };
+		81FE5F491ED4D0FE00F29312 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F481ED4D0FE00F29312 /* UIView+Extensions.swift */; };
+		81FE5F4B1ED4D35500F29312 /* HomeMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F4A1ED4D35500F29312 /* HomeMenuTableViewCell.swift */; };
+		81FE5F4D1ED4DAB200F29312 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F4C1ED4DAB200F29312 /* UIColor+Extensions.swift */; };
+		81FE5F511ED4ECEC00F29312 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F501ED4ECEC00F29312 /* CircularTransition.swift */; };
+		81FE5F531ED4F2D300F29312 /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F521ED4F2D300F29312 /* TesteViewController.swift */; };
+		81FE5F551ED4F45E00F29312 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F541ED4F45E00F29312 /* UIViewController+Extensions.swift */; };
+		81FE5F571ED4F55200F29312 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE5F561ED4F55200F29312 /* UIImage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0091FCD1819E53CE2D883199 /* Pods-EconoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EconoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EconoApp/Pods-EconoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		140E0A2DCFF32BC255C5BDE1 /* Pods_EconoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EconoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A55B90272040602560275F /* Pods-EconoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EconoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-EconoApp/Pods-EconoApp.release.xcconfig"; sourceTree = "<group>"; };
+		813CE3051ED3FF6400CC0070 /* HTMLReaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLReaper.swift; sourceTree = "<group>"; };
 		818C75651ED3FE41006FA2E2 /* EconoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EconoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818C75681ED3FE41006FA2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818C756A1ED3FE41006FA2E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,18 @@
 		818C756F1ED3FE41006FA2E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		818C75721ED3FE41006FA2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		818C75741ED3FE41006FA2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81BBE2381ED47CB800F6E736 /* SELIC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SELIC.swift; sourceTree = "<group>"; };
+		81BBE23A1ED48FD900F6E736 /* SidraAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidraAPI.swift; sourceTree = "<group>"; };
+		81FE5F421ED4A8AA00F29312 /* MinimumWageBrazil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumWageBrazil.swift; sourceTree = "<group>"; };
+		81FE5F441ED4ADB800F29312 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		81FE5F461ED4B91E00F29312 /* WorldBankAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldBankAPI.swift; sourceTree = "<group>"; };
+		81FE5F481ED4D0FE00F29312 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		81FE5F4A1ED4D35500F29312 /* HomeMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewCell.swift; sourceTree = "<group>"; };
+		81FE5F4C1ED4DAB200F29312 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		81FE5F501ED4ECEC00F29312 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		81FE5F521ED4F2D300F29312 /* TesteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
+		81FE5F541ED4F45E00F29312 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		81FE5F561ED4F55200F29312 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114125D218F4F3BD382CFEAD /* Pods_EconoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0751B6C006C317B2D5AAA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				140E0A2DCFF32BC255C5BDE1 /* Pods_EconoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		818C755C1ED3FE40006FA2E2 = {
 			isa = PBXGroup;
 			children = (
 				818C75671ED3FE41006FA2E2 /* EconoApp */,
 				818C75661ED3FE41006FA2E2 /* Products */,
+				FC6A83578E8E647F87E064C1 /* Pods */,
+				2E0751B6C006C317B2D5AAA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +95,36 @@
 		818C75671ED3FE41006FA2E2 /* EconoApp */ = {
 			isa = PBXGroup;
 			children = (
+				81FE5F501ED4ECEC00F29312 /* CircularTransition.swift */,
 				818C75681ED3FE41006FA2E2 /* AppDelegate.swift */,
 				818C756A1ED3FE41006FA2E2 /* ViewController.swift */,
+				81FE5F521ED4F2D300F29312 /* TesteViewController.swift */,
+				81FE5F4A1ED4D35500F29312 /* HomeMenuTableViewCell.swift */,
+				813CE3051ED3FF6400CC0070 /* HTMLReaper.swift */,
+				81BBE2381ED47CB800F6E736 /* SELIC.swift */,
+				81FE5F421ED4A8AA00F29312 /* MinimumWageBrazil.swift */,
+				81BBE23A1ED48FD900F6E736 /* SidraAPI.swift */,
+				81FE5F461ED4B91E00F29312 /* WorldBankAPI.swift */,
+				81FE5F441ED4ADB800F29312 /* String+Extensions.swift */,
+				81FE5F481ED4D0FE00F29312 /* UIView+Extensions.swift */,
+				81FE5F4C1ED4DAB200F29312 /* UIColor+Extensions.swift */,
+				81FE5F561ED4F55200F29312 /* UIImage+Extensions.swift */,
+				81FE5F541ED4F45E00F29312 /* UIViewController+Extensions.swift */,
 				818C756C1ED3FE41006FA2E2 /* Main.storyboard */,
 				818C756F1ED3FE41006FA2E2 /* Assets.xcassets */,
 				818C75711ED3FE41006FA2E2 /* LaunchScreen.storyboard */,
 				818C75741ED3FE41006FA2E2 /* Info.plist */,
 			);
 			path = EconoApp;
+			sourceTree = "<group>";
+		};
+		FC6A83578E8E647F87E064C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0091FCD1819E53CE2D883199 /* Pods-EconoApp.debug.xcconfig */,
+				60A55B90272040602560275F /* Pods-EconoApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 818C75771ED3FE41006FA2E2 /* Build configuration list for PBXNativeTarget "EconoApp" */;
 			buildPhases = (
+				3868735B673B3825C8A22D8D /* [CP] Check Pods Manifest.lock */,
 				818C75611ED3FE41006FA2E2 /* Sources */,
 				818C75621ED3FE41006FA2E2 /* Frameworks */,
 				818C75631ED3FE41006FA2E2 /* Resources */,
+				763A1918D63C72679DADC17E /* [CP] Embed Pods Frameworks */,
+				D2E0583780B9EA7123C3A1F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +198,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3868735B673B3825C8A22D8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		763A1918D63C72679DADC17E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EconoApp/Pods-EconoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E0583780B9EA7123C3A1F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EconoApp/Pods-EconoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		818C75611ED3FE41006FA2E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813CE3061ED3FF6400CC0070 /* HTMLReaper.swift in Sources */,
+				81FE5F511ED4ECEC00F29312 /* CircularTransition.swift in Sources */,
+				81FE5F531ED4F2D300F29312 /* TesteViewController.swift in Sources */,
+				81FE5F451ED4ADB800F29312 /* String+Extensions.swift in Sources */,
 				818C756B1ED3FE41006FA2E2 /* ViewController.swift in Sources */,
+				81FE5F491ED4D0FE00F29312 /* UIView+Extensions.swift in Sources */,
+				81FE5F471ED4B91E00F29312 /* WorldBankAPI.swift in Sources */,
+				81FE5F431ED4A8AA00F29312 /* MinimumWageBrazil.swift in Sources */,
+				81BBE23B1ED48FD900F6E736 /* SidraAPI.swift in Sources */,
+				81FE5F4B1ED4D35500F29312 /* HomeMenuTableViewCell.swift in Sources */,
+				81FE5F551ED4F45E00F29312 /* UIViewController+Extensions.swift in Sources */,
+				81FE5F4D1ED4DAB200F29312 /* UIColor+Extensions.swift in Sources */,
+				81FE5F571ED4F55200F29312 /* UIImage+Extensions.swift in Sources */,
+				81BBE2391ED47CB800F6E736 /* SELIC.swift in Sources */,
 				818C75691ED3FE41006FA2E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +386,7 @@
 		};
 		818C75781ED3FE41006FA2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0091FCD1819E53CE2D883199 /* Pods-EconoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VM6ZEZJCFF;
@@ -272,6 +400,7 @@
 		};
 		818C75791ED3FE41006FA2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A55B90272040602560275F /* Pods-EconoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VM6ZEZJCFF;
@@ -302,6 +431,7 @@
 				818C75791ED3FE41006FA2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

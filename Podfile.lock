@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.4.0)
+  - OneSignal (2.5.2)
+  - SwiftyJSON (3.1.4)
+  - Timepiece (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - OneSignal
+  - SwiftyJSON
+  - Timepiece
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  OneSignal: 66d08b6b1e3c3858cbf28207ed20f1fa865ab2a2
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Timepiece: 4190a7bc5ae1c05c87531fd75b14e17d2a017902
+
+PODFILE CHECKSUM: 17e477c31f97440e334d98c747b37157d0f655b5
+
+COCOAPODS: 1.2.0
