@@ -1,0 +1,6 @@
+framework module Planet {
+  umbrella header "Planet-umbrella.h"
+
+  export *
+  module * { export * }
+}

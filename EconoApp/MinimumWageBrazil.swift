@@ -10,15 +10,18 @@ import Foundation
 
 //http://www.dieese.org.br/analisecestabasica/salarioMinimo.html#2016
 
+struct AnnualMinimumWage {
+    var month: String?
+    var minimumWage: String?
+    var minimumWageNeeded: String?
+}
+
 struct MinimumWageBrazil {
     
-    struct AnnualMinimumWage {
-        var month: String?
-        var minimumWage: String?
-        var minimumWageNeeded: String?
-    }
+    init() { }
     
-    init(completion: ([String: [AnnualMinimumWage]]?) -> ()) {
+    @discardableResult
+    init(completion: @escaping ([String: [AnnualMinimumWage]]?) -> ()) {
         
         let urlString = "http://www.dieese.org.br/analisecestabasica/salarioMinimo.html"
         guard let url = URL(string: urlString) else {
@@ -26,13 +29,29 @@ struct MinimumWageBrazil {
             return
         }
         
-        do {
-            let htmlString = try String(contentsOf: url, encoding: .ascii)
-            completion(manageHTMLString(htmlString: htmlString))
-        } catch let error {
-            completion(nil)
-            print(error.localizedDescription)
-        }
+        let request = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData, timeoutInterval: 30.0)
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print(error)
+                    completion(nil)
+                    return
+                }
+                
+                if let data = data {
+                    if let htmlString = String(data: data, encoding: .ascii) {
+                        completion(MinimumWageBrazil().manageHTMLString(htmlString: htmlString))
+                    } else {
+                        completion(nil)
+                    }
+                } else {
+                    completion(nil)
+                }
+            }
+            
+        }.resume()
+        
     }
     
     private func manageHTMLString(htmlString: String) -> [String: [AnnualMinimumWage]]? {

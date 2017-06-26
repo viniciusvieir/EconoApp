@@ -1,0 +1,16 @@
+/*
+ Localizable.strings
+ EconoApp
+ 
+ Created by Vinicius Vieira on 22/06/17.
+ Copyright © 2017 Vinicius Vieira. All rights reserved.
+ */
+
+"GDP" = "PIB";
+"GDP per Capita" = "PIB per Capita";
+"Inflation" = "Inflation";
+"Interest" = "Intérêt";
+"Employment" = "Emploi";
+"Unemployment" = "Chômage";
+"Minimum Wage" = "Salaire Minimum";
+

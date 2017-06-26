@@ -11,5 +11,7 @@ target 'EconoApp' do
 	pod 'SwiftyJSON'
 	pod 'OneSignal'
 	pod 'Timepiece'
+	pod 'Charts'
+	pod 'Planet'
 	
 end

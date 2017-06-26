@@ -10,10 +10,13 @@ import UIKit
 
 extension UIView {
     
+    func centerTo(view: UIView) {
+        self.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        self.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    }
+    
     func anchorToTop(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil) {
-        
         anchorWithConstantsToTop(top, left: left, bottom: bottom, right: right, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0)
-        
     }
     
     func anchorWithConstantsToTop(_ top: NSLayoutYAxisAnchor? = nil, left: NSLayoutXAxisAnchor? = nil, bottom: NSLayoutYAxisAnchor? = nil, right: NSLayoutXAxisAnchor? = nil, topConstant: CGFloat = 0, leftConstant: CGFloat = 0, bottomConstant: CGFloat = 0, rightConstant: CGFloat = 0) {

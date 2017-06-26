@@ -14,31 +14,58 @@ import SwiftyJSON
 
 struct WorldBankAPI {
     
-    enum SearchIndex: String {
-        case gdp = "http://api.worldbank.org/countries/br/indicators/NY.GDP.MKTP.CD?MRV=50&format=json"
-        case gdpPerCapita = "http://api.worldbank.org/countries/br/indicators/NY.GDP.PCAP.CD?MRV=50&format=json"
-        case unemployment = "http://api.worldbank.org/countries/br/indicators/SL.UEM.TOTL.ZS?MRV=50&format=json"
-        case internationalReserves = "http://api.worldbank.org/countries/br/indicators/FI.RES.TOTL.CD?MRV=50&format=json"
-        case expenses = "http://api.worldbank.org/countries/br/indicators/GC.XPN.TOTL.GD.ZS?MRV=50&format=json"
+    let baseURL = "http://api.worldbank.org/countries/#COUNTRY#/indicators/#INDICATOR#?MRV=#NUMBEROFITEMS#&format=json"
+    
+    enum WorldBankIndicator: String {
+        case gdp = "NY.GDP.MKTP.CD"
+        case gdpGrowth = "NY.GDP.MKTP.KD.ZG"
+        case gdpPerCapita = "NY.GDP.PCAP.CD"
+        case unemployment = "SL.UEM.TOTL.ZS"
+        case internationalReserves = "FI.RES.TOTL.CD"
+        case expenses = "GC.XPN.TOTL.GD.ZS"
+        case inflationGDPDeflator = "NY.GDP.DEFL.KD.ZG"
+        case inflationConsumerPrice = "FP.CPI.TOTL.ZG"
+        case depositInterestRate = "FR.INR.DPST"
     }
     
-    init(searchType: SearchIndex) {
+    @discardableResult
+    init(indicator: WorldBankIndicator, numberOfItems: Int = 40, completion: @escaping (JSON?)->()) {
         
-        guard let url = URL(string: searchType.rawValue) else { return }
+        let isoCountry = currentCountryCode ?? "br"
+        
+        let urlString = baseURL.replacingOccurrences(of: "#COUNTRY#", with: isoCountry).replacingOccurrences(of: "#NUMBEROFITEMS#", with: "\(numberOfItems)").replacingOccurrences(of: "#INDICATOR#", with: indicator.rawValue)
+        
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
         
         Alamofire.request(url).responseJSON { (response) in
             guard let jsonResponse = response.result.value else {
-                print("Response is nil")
+                completion(nil)
                 return
             }
             let json = JSON(jsonResponse)
-//            print(JSON(jsonResponse))
-            //completion(JSON(jsonResponse))
-//            print(json)
-            print(json)
-            
+            completion(json)
         }
         
+    }
+    
+    static func arrayFrom(json: JSON) -> [GenericInfo] {
+        var genericArray = [GenericInfo]()
+        for (_, subJson) in json {
+            if let info = WorldBankAPI.genericValue(json: subJson) {
+                genericArray.append(info)
+            }
+        }
+        return genericArray
+    }
+    
+    static func genericValue(json: JSON) -> GenericInfo? {
+        if let date = json["date"].string, let valueString = json["value"].string, let value = Double(valueString) {
+            return GenericInfo(date: date, value: value)
+        }
+        return nil
     }
     
 }

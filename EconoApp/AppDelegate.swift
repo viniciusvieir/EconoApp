@@ -7,15 +7,42 @@
 //
 
 import UIKit
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let homeController = HomeController()
+        window?.rootViewController = UINavigationController(rootViewController: homeController)
+        
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: "68163da2-86cd-4bbc-84a5-f8ccedef6043",
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+        // Recommend moving the below line to prompt for push after informing the user about
+        //   how your app will use them.
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+        
+        // Sync hashed email if you have a login system or collect it.
+        //   Will be used to reach the user at the most optimal time of day.
+        // OneSignal.syncHashedEmail(userEmail)
+        
+        currentCountryCode = (Locale.current as NSLocale).object(forKey: NSLocale.Key.countryCode) as? String
+        
         return true
     }
 

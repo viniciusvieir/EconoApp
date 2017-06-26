@@ -13,7 +13,7 @@ class HomeMenuTableViewCell: UITableViewCell {
     var info: HomeMenuItems? {
         didSet {
             guard let info = info else { return }
-            titleLabel.text = info.title.rawValue
+            titleLabel.text = NSLocalizedString(info.title.rawValue, comment: "Cell Text")
             if let image = info.image {
                 iconImageView.image = image
                 subtitleLabel.isHidden = true

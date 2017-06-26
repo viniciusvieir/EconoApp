@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Charts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Planet.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-EconoApp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31D1316F99ED0D034859C2A881ADFDBE</key>
+		<key>4CC4AD099D66A344ED52F1DF244703EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,12 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96DC869C1BDCF2AA0D07BC26DC2DC1CB</key>
+		<key>A3505445EE78B95A1E755E5A4BC0BA70</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1456C5B8C316C946DCD2C46EB78580B</key>
+		<key>CDF179F43A82FF66C2BCAD13133AFA3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2E755B7999CA44E5701DCC11B710A3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F307B842FF76B2DE6C55DB67C0885325</key>
 		<dict>
 			<key>primary</key>
 			<true/>
