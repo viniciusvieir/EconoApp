@@ -8,6 +8,6 @@ The data are from many different official sources such as The World Bank, DIEESE
 
 EconoApp is perfect for students, financial market professional, academics and anyone else interested in economic data.
 
-The app is free to download and available at https://itunes.apple.com/us/app/econoapp/id1252140352.
+The app is free to download and available at https://itunes.apple.com/app/econoapp/id1252140352.
 
 If you encounter problems or have suggestions for improving our app, please contact me at vini.vieir@gmail.com.
